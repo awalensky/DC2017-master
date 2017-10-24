@@ -92,8 +92,18 @@ Julia
     background-color: rgba(0,0,0,0.4);
 }
 
+.btn-hdr-link{
+    padding: 10px;
+    margin: 100px 10px 100px 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
 .btn-dark {
-    border-radius: 0;
+/*    padding: 10px;
+    margin: 100px 10px 100px 10px;*/
+    border-radius: 10px;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
@@ -211,22 +221,82 @@ hr.small {
 
 /* Header */
 
-.header {
+header {
     display: table;
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/brain_slice_crop_dc.png) no-repeat center center scroll;
+    background: url(../img/inscapes_pipes.png) no-repeat right top scroll;
     background-color: #000;
-    -webkit-background-size: contain;
+/*    -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
-    -o-background-size: contain;
+    -o-background-size: contain;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+    z-index: 2;
+}
+
+header .header-content h1 {
+/*    margin-top: 0;
+    margin-bottom: 0;
+*/
+    padding: 10px;
+    margin-right:auto;
+    margin-left:auto;
+    max-width:1000px;
+    font-size: 80px;
+    background-color: #1B1B1B;
+    opacity: 0.7;
+    border-radius: 30px;
+}
+
+header .header-content h2 {
+    margin-right:auto;
+    margin-left:auto;
+    max-width:1000px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1B1B1B;
+    opacity: 0.7;
+    border-radius: 30px;
+}
+
+header .header-content h3 {
+    margin-right:auto;
+    margin-left:auto;
+    max-width:1000px;
+    padding: 10px;
+    background-color: #1B1B1B;
+    opacity: 0.7;
+    border-radius: 30px;
+}
+
+header .header-content .inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+}
+
 
 /* About */
 
 .about {
+    padding: 50px 0;
+}
+
+.intro {
     padding: 50px 0;
 }
 
@@ -372,12 +442,30 @@ a:focus, a:hover {
     margin-top:20px
 }
 
+.top40{
+    margin-top:40px
+}
+
+
+.top60{
+    margin-top:60px
+}
+
+
 .bottom20{
     margin-bottom:20px
 }
 
 #sponsors{
-    background-color: #000;
+    background-color: #fff;
+}
+
+#data{
+    background-color: #fff;
+}
+
+#data a {
+    color: black;
 }
 
 #enigma-logo{
